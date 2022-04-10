@@ -19,7 +19,7 @@ if __name__ == '__main__':
     errors = 0
     driver = webdriver.Chrome(options=option, executable_path=chromedriver) #启动浏览器
     for acc in account:
-        usr = acc.split(',')
+        usr = acc.split('-')
         print(usr[0]+"-----"+usr[1])
         
         #进入登陆界面，输入学号和密码进行登录
