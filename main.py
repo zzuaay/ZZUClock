@@ -20,6 +20,7 @@ if __name__ == '__main__':
     driver = webdriver.Chrome(options=option, executable_path=chromedriver) #启动浏览器
     for acc in account:
         usr = acc.split(',')
+        print(usr[0]+"-----"+"usr[1]")
         
         #进入登陆界面，输入学号和密码进行登录
         driver.get('https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/first0')
