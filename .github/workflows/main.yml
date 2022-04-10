@@ -1,9 +1,7 @@
 name: AutoSignIn
 on:
     workflow_dispatch:
-    schedule:
-    #UTC时间16点对应北京时间0点
-    #- cron: '0 16 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
