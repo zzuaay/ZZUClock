@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 import os
 
 account = os.environ.get('ACCOUNT').split(';') #字符串预处理
+print(account)
 mail = os.environ.get('MAIL', 'none')
 
 chromedriver = "/usr/bin/chromedriver" #浏览器驱动配置
